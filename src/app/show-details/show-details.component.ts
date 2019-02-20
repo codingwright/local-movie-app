@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IShowDetails } from '../ishow-details';
 
 @Component({
   selector: 'app-show-details',
@@ -6,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./show-details.component.css']
 })
 export class ShowDetailsComponent implements OnInit {
-
-  constructor() { }
+  current: IShowDetails
+  constructor() {
+    this.current = {
+      name: 'Brooklyn Nine Nine',
+      description: 'Hilarious show I watch all the time',
+      rate: 5,
+      image: ''
+    };
+  }
 
   ngOnInit() {
   }
