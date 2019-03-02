@@ -1,6 +1,10 @@
 export interface IShowDetails {
     name: string
-    description: string
-    rate: number
-    image: string 
+    genres: string
+    network: string
+    time: string
+    schedule: string
+    image: string
+    summary: string
+
 }
