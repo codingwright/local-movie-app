@@ -3,5 +3,4 @@ export interface IShowDetails {
     description: string
     rate: number
     image: string 
-    333: 333
 }
